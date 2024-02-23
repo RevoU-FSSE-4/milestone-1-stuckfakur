@@ -1,14 +1,34 @@
-## Module 1 - Checkpoint #1
+## Module 2 - Checkpoint #1
 
 This is for assignment module 2 FSSE Class of Jan 2024, Web Development Essentials.
 
-The deadline for this task at Friday, Feb 24th 2024
+The deadline for this task at Friday, Feb 23 2024
 
 my live link has going on : [HERE !](https://brandingku.netlify.app/)
 
 ---
+## Features in this page build on module 2
 
-## Features in this page
+### 1. Darkmode
+![image](./assets/images/readme/dark_mode.png)
+
+_if you click on the toggle, its be open function on/off the dark mode_
+
+### 2. Carousel Slider Without JS
+![image](./assets/images/readme/slider_carousel.png)
+
+_You can change the slider with navigation previous or next the image_
+
+### 3. Lighthouse Score
+![image](./assets/images/readme/lighthouse_desktop.png)
+
+_Image Lighthouse Desktop_
+
+![image](./assets/images/readme/lighthouse_mobile.png)
+
+_Image Lighthouse Mobile_
+
+## Features in this page from module 1
 
 #### 1. Responsive Navbar
 ![image](./assets/images/readme/responsive_navbar.png)

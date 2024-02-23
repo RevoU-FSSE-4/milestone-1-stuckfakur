@@ -7,12 +7,14 @@
     <meta name="keywords" content="Custom Tumbler">
     <meta name="author" content="Benaleo Bayu">
 
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://source.unsplash.com;">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Brandingku</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/nav.css">
+    <link rel="stylesheet" href="./public/css/header.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/footer.css">
     <link rel="stylesheet" href="./public/css/slider.css">
     <link rel="stylesheet" href="./public/css/darkmode.css">
     <!-- Icons -->
@@ -32,6 +34,14 @@
             <a href="#categories">Categories</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <div style="display: inline-block">
+                <input type="checkbox" class="checkbox" id="checkbox-dark-mode" aria-label="dark mode">
+                <label for="checkbox-dark-mode" class="checkbox-label">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
             <button data-view="hamburger" aria-label="hamburger menu">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" style="width: 20px; height: 100%; vertical-align: middle">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
@@ -46,6 +56,7 @@
                 <a href="#categories">Categories</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
+
             </div>
         </aside>
     </section>
@@ -56,14 +67,7 @@
             <li><a href="tel:+628123456789">+628123456789</a></li>
             <li><a href="mailto:cs@brandingku.com">cs@brandingku.com</a></li>
         </ul>
-        <div>
-            <input type="checkbox" class="checkbox" id="checkbox-dark-mode">
-            <label for="checkbox-dark-mode" class="checkbox-label">
-                <i class="fa-solid fa-moon"></i>
-                <i class="fa-solid fa-sun"></i>
-                <span class="ball"></span>
-            </label>
-        </div>
+
     </section>
     <section id="hero">
         <div class="cta-hero">
