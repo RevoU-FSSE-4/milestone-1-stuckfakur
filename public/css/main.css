@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+#portfolio{
+    width: 100%;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 250px);
+    gap: 10px
+}
+figure{
+    &:nth-child(1){
+        grid-column: 1/3;
+        grid-row: 1
+    }
+    &:nth-child(2){
+        grid-column: 3;
+        grid-row: 1/3
+    }
+}
+.image__fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all .5s ease-in-out;
+
+    &:hover{
+        filter: none;
+    }
+}
+
+body {
+    background-color: white;
+
+}
+
+body.dark {
+    background-color: darkblue;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.checkbox-label {
+    background-color: black;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox-label .ball {
+    background-color: white;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+    transition: transform .2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+.slider {
+
+}
+
+.inner_slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.slider-open:checked + .slider-item {
+    position: static;
+    opacity: 100%;
+}
+.slider-item{
+    position: absolute;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+
+    & img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+}
+.slider-control {
+    background: rgba(0, 0, 0, 0.6);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translate(0, -50%);
+    line-height: 40px;
+    z-index: 10;
+
+    /*display: none;*/
+    &.prev{
+        left: 2%;
+    }
+    &.next {
+        right: 2%;
+    }
+}
+
+#slider-1:checked ~ .control-slide-1,
+#slider-2:checked ~ .control-slide-2,
+#slider-3:checked ~ .control-slide-3 {
+    display: block;
+}
+
+
+@media only screen and (max-width: 576px){
+    .grid{
+        grid-template-rows: repeat(3, 250px);
+    }
+    figure{
+        &:nth-child(3){
+            grid-column: 1/3;
+            grid-row: 2
+        }
+        &:nth-child(4){
+            grid-column: 1/4;
+        }
+    }
+}
