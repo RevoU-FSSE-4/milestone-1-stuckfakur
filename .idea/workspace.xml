@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="007d44b7-26cc-4d2b-991f-6b7e8245cd41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/categories/atk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/categories/mug.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/categories/powerbank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/categories/spundbod.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/categories/tumbler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/categories/umbrella.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/categories/usb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/main/header.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/products/jupiter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/products/subway.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/products/taka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/products/unavailable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/products/vivo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/readme/form_popup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/readme/responsive_navbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/readme/sidebar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/scripts.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2clK4M6imwfjlPc9T3gRXkziPUh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Rebasing main",
+    "last_opened_file_path": "/Users/apple/Downloads/Data/Code/revou/assignment-module-2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="007d44b7-26cc-4d2b-991f-6b7e8245cd41" name="Changes" comment="" />
+      <created>1708680532768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708680532768</updated>
+      <workItem from="1708680534225" duration="126000" />
+      <workItem from="1708680672107" duration="617000" />
+      <workItem from="1708682230969" duration="87000" />
+      <workItem from="1708682330672" duration="657000" />
+      <workItem from="1708698435986" duration="17083000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
