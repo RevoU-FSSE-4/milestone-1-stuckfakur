@@ -99,6 +99,70 @@ main section {
             object-fit: cover;
         }
     }
+
+    .badge-title {
+        margin: 1rem 0;
+        padding: 1rem 3rem;
+        color: white;
+        border-radius: 20px;
+        background: linear-gradient(to right, rgba(11, 163, 96, 0.55), rgba(13, 154, 69, 0.8));
+    }
+
+    .loop-client-slider {
+        display: flex;
+        justify-content: center;
+        width: 300%;
+        height: 150px;
+        .loop-transition {
+            transition: all .3s ease;
+        }
+        .loop-client-container {
+            overflow: hidden;
+            position: relative;
+            background: white;
+            box-shadow: 0 3px 10px -3px rgba(0,0,0, 0.3);
+            &::before, &::after {
+                content: " ";
+                position: absolute;
+                z-index: 7;
+                width: 180px;
+                height: 100%;
+                top: 0;
+            }
+            &::before{
+                left: 0;
+                background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 100%);
+
+            }
+            &::after {
+                right: 0;
+                background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 100%);
+
+            }
+            ul.loop-client-list {
+                width: calc(180px * 12);
+                display: flex;
+                height: 100%;
+                li.loop-client-item {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: white;
+                    color: #282828;
+                    width: 180px;
+                    animation: translateinfinite 13s linear infinite;
+                    .fa-brands{
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes translateinfinite {
+    100% { transform: translateX(calc(180px * 6))}
 }
 
 @media only screen and (max-width: 550px) {

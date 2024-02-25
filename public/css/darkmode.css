@@ -1,8 +1,17 @@
-body.dark {background-color: #292c35;}
+body.dark {
+    background-color: #292c35;
+
+    & > footer {
+        background-color: #292c35;
+    }
+}
 
 body.dark {
     h1,h2,h3,h4,h5,h6,p,a,span,li::marker {
         color: white !important;
+    }
+    .list-product {
+        border: 1px solid rgba(255,255,255, 0.7);
     }
 }
 
