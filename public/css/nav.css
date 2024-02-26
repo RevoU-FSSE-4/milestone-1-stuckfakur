@@ -3,7 +3,7 @@ nav {
     width: 100%;
     top: 0;
     background-color: black;
-    z-index: 100;
+    z-index: 99;
 }
 
 .nav {
@@ -11,6 +11,8 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    position: relative;
+    z-index: 100;
 
     & > a, .nav-menu > a {
         text-decoration: none;
@@ -46,6 +48,7 @@ aside {
 
     & .menu {
         display: grid;
+        margin-top: 40px;
 
         & a {
             text-decoration: none;
