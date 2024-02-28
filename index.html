@@ -156,15 +156,24 @@
             <div class="inner-slider">
                 <input type="radio" name="slider" id="slider-1" class="slider-open" aria-hidden="true" hidden="" checked="checked">
                 <div class="slide-item">
-                    <img src="https://source.unsplash.com/random/1440x550/?souvenir" alt="slide-1">
+                    <picture>
+                        <source media="(min-width: 550px)" srcset="https://source.unsplash.com/random/1440x550/?souvenir">
+                        <img src="https://source.unsplash.com/random/550x400/?souvenir" alt="slide-1">
+                    </picture>
                 </div>
                 <input type="radio" name="slider" id="slider-2" class="slider-open" aria-hidden="true" hidden="">
                 <div class="slide-item">
-                    <img src="https://source.unsplash.com/random/1440x550/?traveling" alt="slide-2">
+                    <picture>
+                        <source media="(min-width: 550px)" srcset="https://source.unsplash.com/random/1440x550/?traveling">
+                        <img src="https://source.unsplash.com/random/550x400/?traveling" alt="slide-2">
+                    </picture>
                 </div>
                 <input type="radio" name="slider" id="slider-3" class="slider-open" aria-hidden="true" hidden="">
                 <div class="slide-item">
-                    <img src="https://source.unsplash.com/random/1440x550/?car" alt="slide-3">
+                    <picture>
+                        <source media="(min-width: 550px)" srcset="https://source.unsplash.com/random/1440x550/?car">
+                        <img src="https://source.unsplash.com/random/550x400/?car" alt="slide-3">
+                    </picture>
                 </div>
                 <!-- on slide 1 -->
                 <label class="slide-control prev control-slide-1" for="slider-3">
