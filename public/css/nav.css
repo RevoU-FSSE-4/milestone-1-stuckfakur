@@ -4,6 +4,7 @@ nav {
     top: 0;
     background-color: black;
     z-index: 99;
+
 }
 
 .nav {
@@ -49,6 +50,7 @@ aside {
     & .menu {
         display: grid;
         margin-top: 40px;
+
 
         & a {
             text-decoration: none;

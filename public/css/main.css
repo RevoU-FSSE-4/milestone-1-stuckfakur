@@ -170,6 +170,7 @@ main section {
                     }
                 }
             }
+
         }
     }
 }
@@ -179,7 +180,6 @@ main section {
 }
 
 @media only screen and (max-width: 550px) {
-
     .categories{
         grid-template-columns: repeat(3, minmax(60px, 80px));
     }
@@ -194,7 +194,7 @@ main section {
     }
 
     .my-portfolio{
-        grid-template-rows: repeat(3, 120px) !important;
+        grid-template-rows: repeat(3, minmax(100px, 120px)) !important;
         figure{
             &:nth-child(3) {
                 grid-column: 1/3;
