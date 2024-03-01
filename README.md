@@ -1,12 +1,17 @@
-## Module 2 - Checkpoint #1
+## Module 2 - Assignment with Advanced Implementation
 
 This is for assignment module 2 FSSE Class of Jan 2024, Web Development Essentials.
 
-The deadline for this task at Friday, Feb 23 2024
+The deadline for this task at Friday, Mar 1 2024
 
-my live link has going on : [HERE !](https://brandingku.netlify.app/)
+checkout my live link with custom domain at : [HERE !](https://brandingku.my.id)
+
+my live link on netlify subdomain has going on : [HERE !](https://brandingku.netlify.app/)
 
 ---
+## Step Auto Deploy Github on Netlify
+
+### You can see the installment guide at : [HERE !](./GUIDE.md) 
 ## Features in this page build on module 2
 
 ### 1. Darkmode
