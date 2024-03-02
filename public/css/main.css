@@ -56,7 +56,6 @@ main section {
         width: 100%;
         max-width: 760px;
         text-align: center;
-        padding: 2rem 0;
 
         & > p {
             padding: 1rem 2rem;
@@ -132,16 +131,15 @@ main section {
                 width: 180px;
                 height: 100%;
                 top: 0;
+                z-index: 2;
             }
             &::before{
                 left: 0;
                 background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 100%);
-
             }
             &::after {
                 right: 0;
                 background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 100%);
-
             }
             ul.loop-client-list {
                 width: calc(180px * 12);
@@ -169,7 +167,6 @@ main section {
                     }
                 }
             }
-
         }
     }
 }

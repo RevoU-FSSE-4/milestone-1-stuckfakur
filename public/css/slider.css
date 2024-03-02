@@ -1,7 +1,6 @@
 .slider{
-    /*position: relative;*/
     box-shadow: 0 0 15px rgba(0,0,0, 0.5);
-    margin: 2rem 0;
+    margin: 1rem 0 0 0;
 }
 
 .inner-slider {

@@ -1,13 +1,35 @@
 body.dark {
     background-color: #292c35;
 
-    & > footer {
+    & .title-content{
         background-color: #292c35;
+        margin: 1rem 0;
+
+        & span {
+            padding: 1rem 3rem;
+            color: white;
+            border-radius: 20px;
+            background: linear-gradient(to right, rgba(11, 163, 96, 0.55), rgba(13, 154, 69, 0.8));
+        }
+    }
+    & .loop-client-container{
+        &::before{
+            left: 0;
+            background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 30%) !important;
+        }
+        &::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 30%) !important;
+        }
+    }
+
+    & footer, & .loop-client-container, & li.loop-client-item {
+        background-color: #292c35 !important;
     }
 }
 
 body.dark {
-    h1,h2,h3,h4,h5,h6,p,a,span,li::marker {
+    h1,h2,h3,h4,h5,h6,p,a,span,li::marker,i {
         color: white !important;
     }
     .list-product {
