@@ -1,40 +1,52 @@
 body.dark {
     background-color: #292c35;
 
-    & .title-content{
-        background-color: #292c35;
-        margin: 1rem 0;
-
-        & span {
-            padding: 1rem 3rem;
-            color: white;
-            border-radius: 20px;
-            background: linear-gradient(to right, rgba(11, 163, 96, 0.55), rgba(13, 154, 69, 0.8));
-        }
-    }
-    & .loop-client-container{
-        &::before{
-            left: 0;
-            background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 30%) !important;
-        }
-        &::after {
-            right: 0;
-            background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 30%) !important;
+    & main {
+        & .loop-client-container, & li.loop-client-item {
+            background-color: #292c35 !important;
         }
     }
 
-    & footer, & .loop-client-container, & li.loop-client-item {
+    & footer {
+        background-color: #292c35 !important;
+    }
+    & .title-content, .foo-form{
         background-color: #292c35 !important;
     }
 }
 
 body.dark {
-    h1,h2,h3,h4,h5,h6,p,a,span,li::marker,i {
+    h1,h2,h3,h4,h5,h6,p,a,span,li::marker,i, label {
         color: white !important;
     }
+    .categories{
+        gap: 2rem;
+
+        .list-category {
+            border: 1px solid rgba(199, 199, 199, 0.5);
+            border-radius: 10px;
+            padding: 0.25rem 0;
+        }
+    }
+
     .list-product {
         border: 1px solid rgba(255,255,255, 0.7);
     }
+
+    & .loop-client-container{
+        &::before{
+            left: 0;
+            background: linear-gradient(to right, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0 ) 100%) !important;
+        }
+        &::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0 ) 100%) !important;
+        }
+    }
+    & .foo-form {
+        border: 1px solid white;
+    }
+
 
 }
 

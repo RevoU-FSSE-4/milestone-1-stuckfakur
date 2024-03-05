@@ -34,12 +34,13 @@
     & .cta-hero{
         display: flex;
         justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        align-items: start;
         height: 100%;
         font-size: 2rem;
+        padding: 0 calc(50px + 1vw);
 
         & p {
-            padding: 1rem 2rem;
             font-family: "Poppins", sans-serif;
             font-weight: 900;
             font-style: normal;

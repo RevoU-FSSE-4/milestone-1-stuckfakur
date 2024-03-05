@@ -7,12 +7,21 @@
 @import "darkmode.css";
 @import "slider.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.outfit-fonts{
+    font-family: "Outfit", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -26,13 +35,50 @@ body {
 .show {
     display: block !important;
 }
-
+#categories, #about, #contactUs {
+    scroll-margin-top: 80px;
+}
 .title-content {
-    width: 100%;
     text-align: center;
-    padding: 1rem 0;
-    background-color: ghostwhite;
-    font-weight: bold;
+    font-weight: 800;
+    font-family: "Outfit", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(#0ba360, #67e0aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2rem 0 1rem 0;
+    transition: all .6s ease-in-out;
+
+    &:before, &:after {
+        content: '-----------';
+        padding: 0 1rem;
+    }
+
+    &:hover{
+        background: linear-gradient(to right, #3238ec, #ff1ce0);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}
+
+.cta-button {
+    background: linear-gradient(to right, #3238ec, #ff1ce0, #67e0aa);
+    background-size: 300%;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .4s linear;
+    border: none;
+
+    &:hover {
+        background-position: 100% 0;
+        transform: scale(1.1);
+        color: #111111;
+    }
 }
 
 button.close {
@@ -67,6 +113,7 @@ button[type="submit"] {
         background-position: 100% 0;
         transform: translateY(-15px);
         transition: all .4s ease-in-out;
+        color: white;
     }
 }
 

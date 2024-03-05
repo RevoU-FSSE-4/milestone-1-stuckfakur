@@ -7,12 +7,18 @@ main section {
 .categories {
     display: grid;
     grid-template-columns: repeat(6, minmax(80px, 120px));
-    padding: 2rem 0;
     gap: 15px;
 
     & > .list-category {
         display: grid;
         justify-items: center;
+    }
+
+    & img {
+        transition: all .4s ease;
+        &:hover {
+            transform: translateY(-10px);
+        }
     }
 
     & .figure__image {
@@ -28,6 +34,7 @@ main section {
     grid-template-columns: repeat(3, 1fr);
     margin: 2rem 0;
     padding: 0 10px;
+    position: relative;
 
     & > .list-product {
         display: grid;
@@ -37,6 +44,7 @@ main section {
 
         &:hover {
             box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.75);
+            z-index: 1;
         }
 
         & h3 {
@@ -47,6 +55,11 @@ main section {
         & img {
             width: 100%;
             max-width: 350px;
+            border-radius: 10px;
+            transition: all .3s ease;
+            &:hover {
+                transform: translateY(-10px);
+            }
         }
     }
 }
