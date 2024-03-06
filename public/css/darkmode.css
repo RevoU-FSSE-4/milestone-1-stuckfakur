@@ -19,6 +19,7 @@ body.dark {
     h1,h2,h3,h4,h5,h6,p,a,span,li::marker,i, label {
         color: white !important;
         background: none !important;
+        transition: all 1s ease;
     }
     .categories{
         gap: 2rem;
@@ -75,12 +76,12 @@ body.dark {
 .fa-sun {color: #f39c12;}
 
 .checkbox-label .ball {
-    background-color: #fff;
+    background-color: #fff !important;
     width: 22px;
     height: 22px;
     position: absolute;
-    left: 2px;
-    top: 2px;
+    left: 1px;
+    top: 1px;
     border-radius: 50%;
     transition: transform 0.2s linear;
 }

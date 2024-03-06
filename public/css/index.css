@@ -28,6 +28,9 @@ body {
     overflow-x: hidden;
     transition: all 1s ease;
 }
+body.dark {
+    transition: all 1s ease;
+}
 
 .hidden {
     display: none !important;
@@ -43,6 +46,12 @@ body {
 
 .opacity-0 {
     opacity: 0 !important;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #categories, #about, #contactUs {
@@ -89,6 +98,26 @@ body {
     }
 }
 
+.see-more {
+    background: #67e0aa;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 0 15px 5px rgba(170, 170, 170, 0.8);
+    transition: all .6s ease;
+
+    &:hover{
+        transform: translatey(-5px) scale(1.1);
+        color: darkgreen;
+
+        &:after{
+            content: ' >>';
+            transform: translateX(50px);
+        }
+    }
+}
+
 button.close {
     position: absolute;
     top: 2%;
@@ -103,7 +132,7 @@ button.reset {
     text-align: center;
     border-radius: 10px;
     border: none;
-    background: linear-gradient(to right, rgba(50, 56, 236, 0.5), rgba(255, 28, 224, 0.8), rgba(103, 224, 170, 0.5));
+    background: linear-gradient(to right, #3238ec, #ff1ce0, #67e0aa);
     background-size: 300%;
     transition: all .2s ease;
     &:hover {
@@ -140,6 +169,12 @@ button[type="submit"] {
 }
 
 .btn-primary {
-    background-image: linear-gradient(to right, #0ba360, #b6c06b, #0d1c9a, #67e0aa);
+    background: linear-gradient(to right, #3238ec, #ff1ce0, #67e0aa);
+}
+
+.copyright {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
 }
 

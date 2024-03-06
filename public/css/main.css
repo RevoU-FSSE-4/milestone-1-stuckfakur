@@ -57,8 +57,9 @@ main section {
         & h3 {
             font-weight: bold;
             background: white;
-            display: inline-block;
-            padding: 1rem 2rem;
+            padding: 1rem 0;
+            width: 100%;
+            text-align: center;
             border-radius: 5px;
         }
 
@@ -79,6 +80,7 @@ main section {
         width: 100%;
         max-width: 760px;
         text-align: center;
+        position: relative;
 
         & p {
             background: white;
@@ -207,7 +209,7 @@ main section {
     }
 
     .product {
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
 
         & img {
             width: 100%;
@@ -229,5 +231,36 @@ main section {
 
         }
     }
+
+}
+
+/* portfolio pages */
+#portfolio {
+    margin: 20px;
+    max-width: 1440px;
+    display: inline-block;
+    columns: 3;
+    gap: 20px;
+}
+.box {
+    margin-bottom: 10px;
+    position: relative;
+    &:hover .show-caption {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+.show-caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    background: rgba(35, 35, 35, 0.6);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    opacity: 0;
+    transition: all .6s ease;
 
 }

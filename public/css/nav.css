@@ -86,7 +86,7 @@ aside {
         }
     }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 678px) {
     aside {
         width: 100%;
         max-width: 200px;
