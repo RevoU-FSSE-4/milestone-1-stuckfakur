@@ -21,7 +21,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", "Outfit", sans-serif;
 }
 
 body {
@@ -55,11 +55,12 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.5rem;
-    background: -webkit-linear-gradient(#0ba360, #67e0aa);
+    background: linear-gradient(to right, #0ba360, #67e0aa, #296549);
+    -webkit-background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 2rem 0 1rem 0;
-    transition: all .6s ease-in-out;
+    transition: all 1s ease-in-out;
 
     &:before, &:after {
         content: '-----------';
@@ -67,11 +68,8 @@ body {
     }
 
     &:hover{
-        background: linear-gradient(to right, #3238ec, #ff1ce0);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background-position: 100% 0;
     }
-
 }
 
 .cta-button {
@@ -114,7 +112,6 @@ button.reset {
     }
 }
 
-
 .bg-blur {
     position: fixed;
     width: 100vw;
@@ -144,5 +141,5 @@ button[type="submit"] {
 
 .btn-primary {
     background-image: linear-gradient(to right, #0ba360, #b6c06b, #0d1c9a, #67e0aa);
-
 }
+

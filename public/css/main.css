@@ -26,6 +26,13 @@ main section {
         height: 100%;
         object-fit: cover;
     }
+
+    & p {
+        background: white;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .product {
@@ -48,8 +55,11 @@ main section {
         }
 
         & h3 {
-            padding: 1rem 0;
             font-weight: bold;
+            background: white;
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 5px;
         }
 
         & img {
@@ -70,8 +80,11 @@ main section {
         max-width: 760px;
         text-align: center;
 
-        & > p {
-            padding: 1rem 2rem;
+        & p {
+            background: white;
+            display: inline-block;
+            padding: 0 2rem;
+            border-radius: 5px;
         }
         & .my-portfolio {
             padding: 1rem 3rem;

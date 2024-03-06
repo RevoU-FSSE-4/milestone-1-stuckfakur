@@ -55,14 +55,17 @@ inputGreen.addEventListener('change', setBackgroundColor);
 inputBlue.addEventListener('change', setBackgroundColor);
 
 getSavedColor();
-
+// set value input to 0
+function setInputColorZero() {
+    inputRed.value = 0;
+    inputGreen.value = 0;
+    inputBlue.value = 0;
+}
 // reset adjust background color
 document.querySelector('button.reset').addEventListener('click', ()=>{
     localStorage.removeItem('backgroundColor');
     document.body.style.backgroundColor = 'white';
-    inputRed.value = 0;
-    inputGreen.value = 0;
-    inputBlue.value = 0;
+    setInputColorZero();
 })
 
 // js dark mode
@@ -71,6 +74,7 @@ checkbox.addEventListener("change", () => {
     localStorage.removeItem('backgroundColor');
     document.body.style.backgroundColor = '';
     changeBg.classList.toggle('opacity-0');
+    setInputColorZero();
     document.body.classList.toggle("dark");
 
     document.querySelectorAll('.popupBg label').forEach((e)=>{

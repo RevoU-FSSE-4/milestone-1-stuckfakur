@@ -18,6 +18,7 @@ body.dark {
 body.dark {
     h1,h2,h3,h4,h5,h6,p,a,span,li::marker,i, label {
         color: white !important;
+        background: none !important;
     }
     .categories{
         gap: 2rem;
