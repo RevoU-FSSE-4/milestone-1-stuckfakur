@@ -17,7 +17,6 @@ const buttonClose = document.getElementById('closeBtn');
 buttonClose.addEventListener('click', () => {
     alertChild.classList.remove('show-alert');
     document.querySelector(".bg-blur").classList.remove('show');
-
 })
 
 // hover the bg
@@ -57,10 +56,24 @@ inputBlue.addEventListener('change', setBackgroundColor);
 
 getSavedColor();
 
-
+// reset adjust background color
+document.querySelector('button.reset').addEventListener('click', ()=>{
+    localStorage.removeItem('backgroundColor');
+    document.body.style.backgroundColor = 'white';
+    inputRed.value = 0;
+    inputGreen.value = 0;
+    inputBlue.value = 0;
+})
 
 // js dark mode
 const checkbox = document.getElementById("checkbox-dark-mode")
 checkbox.addEventListener("change", () => {
-    document.body.classList.toggle("dark")
+    localStorage.removeItem('backgroundColor');
+    document.body.style.backgroundColor = '';
+    changeBg.classList.toggle('opacity-0');
+    document.body.classList.toggle("dark");
+
+    document.querySelectorAll('.popupBg label').forEach((e)=>{
+        e.classList.toggle('invert');
+    })
 })

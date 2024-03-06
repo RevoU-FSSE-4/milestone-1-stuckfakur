@@ -39,6 +39,7 @@ nav {
     border-radius: 50%;
     background: linear-gradient(to right, #ff1ce0, #f1c40f);
     position: relative;
+    transition: opacity 1s ease;
 
     & > .popupBg {
         background: ghostwhite;
@@ -49,6 +50,7 @@ nav {
         border-radius: 10px;
         box-shadow: 0 0 15px 5px #111111;
         display: none;
+
     }
 }
 

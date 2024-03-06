@@ -1,5 +1,5 @@
 body.dark {
-    background-color: #292c35;
+    background-color: #292c35 !important;
 
     & main {
         & .loop-client-container, & li.loop-client-item {
