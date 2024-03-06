@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Supplier and Vendor for Merchandise Souvenir">
+    <meta name="keywords" content="Custom Souvenir">
+    <meta name="keywords" content="Custom Tumbler">
+    <meta name="author" content="Benaleo Bayu">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio of Brandingku</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/css/index.css">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/f99be2198e.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png">
+</head>
+<body>
+<nav>
+    <div class="nav">
+        <a class="nav-logo" style="padding-left: 0" href="#"><img src="./assets/images/main/Logo.png" alt="brandingku logo" width="150" ></a>
+        <div class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <div style="display: inline-block">
+                <input type="checkbox" class="checkbox" id="checkbox-dark-mode" aria-label="dark mode">
+                <label for="checkbox-dark-mode" class="checkbox-label">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
+            <div style="display: inline-block" id="changeBg">
+                <div class="popupBg">
+                    <label for="inputRed">Red</label>
+                    <input type="range" name="inputRed" id="inputRed" min="0" max="255" step="1" value="0">
+                    <label for="inputGreen">Green</label>
+                    <input type="range" name="inputGreen" id="inputGreen" min="0" max="255" step="1" value="0">
+                    <label for="inputBlue">Red</label>
+                    <input type="range" name="inputBlue" id="inputBlue" min="0" max="255" step="1" value="0">
+                </div>
+            </div>
+            <button data-view="hamburger" aria-label="hamburger menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" style="width: 20px; height: 100%; vertical-align: middle">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <section>
+        <aside class="hidden">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+        </aside>
+    </section>
+</nav>
+<footer>
+    <section id="foo">
+        <div class="title-content" id="contact">
+            <span>Contact Us</span>
+        </div>
+        <div class="foo-content">
+            <p>Do you have any questions for us?</p>
+            <p>You can send some questions by filling out the form below.</p>
+        </div>
+        <div class="foo-form">
+            <form id="contactUs">
+                <div class="form-section">
+                    <label for="nama">Name</label>
+                    <input type="text" name="nama" id="nama" required />
+                </div>
+                <div class="form-section">
+                    <label for="phone">Phone</label>
+                    <input type="number" name="phone" id="phone">
+                </div>
+                <div class="form-section">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"  />
+                </div>
+
+                <div class="form-section">
+                    <label>Gender</label>
+                    <div>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                </div>
+                <button class="submit btn-primary" type="submit" id="submitBtn">Send</button>
+            </form>
+        </div>
+    </section>
+    <div style="text-align: center; padding: 1rem 0 0.5rem 0">
+        <p>Copyright &copy; 2024, Benaleo</p>
+    </div>
+</footer>
+<!-- Display while submit -->
+<section id="alert">
+    <div class="bg-blur"></div>
+    <div class="alert">
+        <div class="alert-title" style="margin-bottom: 20px">
+            <h2>Thanks !</h2>
+        </div>
+        <div class="alert-body" style="padding: 1rem 2rem; text-align: center">
+            <p>
+                Your question has been recorded. Please wait a moment to admin reply your question.
+            </p>
+        </div>
+        <button id="closeBtn" class="close">x</button>
+    </div>
+</section>
+
+<script src="./public/js/scripts.js"></script>
+</body>
+</html>

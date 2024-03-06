@@ -30,7 +30,26 @@ nav {
         color: yellow;
         font-weight: bold;
     }
+}
 
+#changeBg {
+    margin: 0 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ff1ce0, #f1c40f);
+    position: relative;
+
+    & > .popupBg {
+        background: ghostwhite;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 15px 5px #111111;
+        display: none;
+    }
 }
 
 .nav-menu {
