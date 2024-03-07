@@ -1,3 +1,10 @@
+// use to toggle the sidebar
+const menu = document.querySelector('button[data-view="hamburger"]')
+const alertChild = document.querySelector('#alert');
+menu.addEventListener('click', () => {
+    const aside = document.querySelector('aside');
+    aside.classList.toggle('hidden');
+})
 
 // hover the bg
 const changeBg = document.getElementById('changeBg');

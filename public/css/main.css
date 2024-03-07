@@ -245,6 +245,7 @@ main section {
 .box {
     margin-bottom: 10px;
     position: relative;
+    overflow: hidden;
     &:hover .show-caption {
         transform: translate(-50%, 0);
         opacity: 1;
@@ -264,3 +265,9 @@ main section {
     transition: all .6s ease;
 
 }
+@media only screen and (max-width: 960px){
+    #portfolio {
+        columns: 2;
+    }
+}
+
