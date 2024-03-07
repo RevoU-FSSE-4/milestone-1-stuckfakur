@@ -54,6 +54,10 @@ body.dark {
     object-fit: cover;
 }
 
+.text-white {
+    color: white;
+}
+
 #categories, #about, #contactUs {
     scroll-margin-top: 80px;
 }
@@ -174,7 +178,15 @@ button[type="submit"] {
 
 .copyright {
     width: 100%;
-    margin-top: 20px;
+    padding: 1rem 0;
     text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    .title-content{
+        &:before , &:after{
+            content: "---";
+        }
+    }
 }
 
