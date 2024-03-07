@@ -16,6 +16,7 @@ main section {
 
     & img {
         transition: all .4s ease;
+
         &:hover {
             transform: translateY(-10px);
         }
@@ -68,6 +69,7 @@ main section {
             max-width: 350px;
             border-radius: 10px;
             transition: all .3s ease;
+
             &:hover {
                 transform: translateY(-10px);
             }
@@ -88,6 +90,7 @@ main section {
             padding: 0 2rem;
             border-radius: 5px;
         }
+
         & .my-portfolio {
             padding: 1rem 3rem;
             display: grid;
@@ -98,13 +101,11 @@ main section {
             & figure {
                 background-image: linear-gradient(45deg, #0ba360, #abbdb7);
 
-                &:nth-child(1) {
+                &:nth-child(4n+1) {
                     grid-column: 1/3;
-                    grid-row: 1;
                 }
 
-                &:nth-child(2) {
-                    grid-column: 3;
+                &:nth-child(4n+2) {
                     grid-row: 1/3;
                 }
             }
@@ -114,16 +115,10 @@ main section {
                 filter: grayscale(100%);
                 transition: all .5s ease-in-out;
 
-                &:hover{
+                &:hover {
                     filter: none;
                 }
             }
-        }
-
-        & .image__fit {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     }
 
@@ -134,11 +129,13 @@ main section {
         border-radius: 20px;
         background: linear-gradient(to right, rgba(11, 163, 96, 0.55), rgba(13, 154, 69, 0.8));
     }
+
     @media only screen and (max-width: 550px) {
         .loop-client-slider {
             width: 100% !important;
         }
     }
+
     .loop-client-slider {
         display: flex;
         justify-content: center;
@@ -148,11 +145,13 @@ main section {
         .loop-transition {
             transition: all .3s ease;
         }
+
         .loop-client-container {
             overflow: hidden;
             position: relative;
             background: white;
-            box-shadow: 0 3px 10px -3px rgba(0,0,0, 0.3);
+            box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+
             &::before, &::after {
                 content: " ";
                 position: absolute;
@@ -161,18 +160,22 @@ main section {
                 top: 0;
                 z-index: 2;
             }
-            &::before{
+
+            &::before {
                 left: 0;
-                background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 100%);
+                background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
             }
+
             &::after {
                 right: 0;
-                background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0 ) 100%);
+                background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
             }
+
             ul.loop-client-list {
                 width: calc(180px * 12);
                 display: flex;
                 height: 100%;
+
                 li.loop-client-item {
                     flex: 1;
                     display: flex;
@@ -182,14 +185,17 @@ main section {
                     color: #282828;
                     width: 180px;
                     animation: translateinfinite 13s linear infinite;
-                    .fa-brands{
+
+                    .fa-brands {
                         font-size: 4rem;
                     }
                 }
             }
-            @media only screen and (max-width: 550px){
+
+            @media only screen and (max-width: 550px) {
                 ul.loop-client-list {
                     width: calc(180px * 12);
+
                     li.loop-client-item {
                         animation: translateinfinite 13s linear infinite;
                     }
@@ -200,11 +206,13 @@ main section {
 }
 
 @keyframes translateinfinite {
-    100% { transform: translateX(calc(-180px * 6))}
+    100% {
+        transform: translateX(calc(-180px * 6))
+    }
 }
 
 @media only screen and (max-width: 550px) {
-    .categories{
+    .categories {
         grid-template-columns: repeat(3, minmax(60px, 80px));
     }
 
@@ -217,13 +225,15 @@ main section {
         }
     }
 
-    .my-portfolio{
+    .my-portfolio {
         grid-template-rows: repeat(3, minmax(100px, 120px)) !important;
-        figure{
+
+        figure {
             &:nth-child(3) {
                 grid-column: 1/3;
                 grid-row: 2;
             }
+
             &:nth-child(4) {
                 grid-column: 1/4;
                 grid-row: 3;
@@ -242,19 +252,23 @@ main section {
     columns: 4;
     gap: 20px;
 }
+
 .box {
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+
     &:hover .show-caption {
         transform: translate(-50%, 0);
         opacity: 1;
     }
+
     img {
         border-radius: 10px;
     }
 }
+
 .show-caption {
     position: absolute;
     bottom: 0;
@@ -269,14 +283,22 @@ main section {
     transition: all .6s ease;
 
 }
-@media only screen and (max-width: 960px){
+
+@media only screen and (max-width: 960px) {
     #portfolio {
         columns: 3;
     }
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
     #portfolio {
         columns: 2;
     }
 }
 
+.test-absolute {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.5);
+}

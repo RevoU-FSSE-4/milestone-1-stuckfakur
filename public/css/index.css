@@ -48,7 +48,7 @@ body.dark {
     opacity: 0 !important;
 }
 
-.box img {
+.box img, figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -58,7 +58,7 @@ body.dark {
     color: white;
 }
 
-#categories, #about, #contactUs {
+#categories, #about, #contact {
     scroll-margin-top: 80px;
 }
 .title-content {
