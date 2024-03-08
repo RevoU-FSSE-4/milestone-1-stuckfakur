@@ -74,6 +74,14 @@ function setInputColorZero() {
 document.querySelector('button.reset').addEventListener('click', ()=>{
     localStorage.removeItem('backgroundColor');
     document.body.style.backgroundColor = 'white';
+    const categoryHover = document.querySelectorAll('div.triangle');
+    categoryHover.forEach((e)=> {
+        e.removeAttribute(`style`);
+    })
+    const productHover = document.querySelectorAll('div.product-hover');
+    productHover.forEach((e)=>{
+        e.style.backgroundColor = 'white';
+    });
     setInputColorZero();
 })
 
