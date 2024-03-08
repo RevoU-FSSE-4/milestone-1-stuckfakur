@@ -1,6 +1,6 @@
 const accessKey = 'T7uiTISAU8jSaBbMOgt5GKTgm2yNojQaP9DRPD3JJh4';
 let count ;
-const index = window.location.pathname.includes('index.html');
+const index = window.location.pathname.includes('index.html') || window.location.pathname === '/';
 const portfolio = window.location.pathname.includes('portfolio.html');
 
 async function loadImages() {
