@@ -1,11 +1,11 @@
 const accessKey = 'T7uiTISAU8jSaBbMOgt5GKTgm2yNojQaP9DRPD3JJh4';
-const count =10 ;
+let count ;
 const index = window.location.pathname.includes('index.html');
 const portfolio = window.location.pathname.includes('portfolio.html');
 
 async function loadImages() {
     try {
-        const response = await fetch(`https://api.unsplash.com/photos/random/?client_id=${accessKey}&count=${count}`);
+        const response = await fetch(`https://api.unsplash.com/photos/random/?client_id=${accessKey}&count=${index ? 4 : (portfolio ? 10 : 0) }`);
         const data = await response.json();
         const imageContainer = document.getElementById('portfolio');
         const myPortfolio = document.getElementById('my-portfolio');

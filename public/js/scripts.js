@@ -23,6 +23,15 @@ let inputBlue = document.getElementById('inputBlue');
 function setBackgroundColor(){
     let color = `rgb(${inputRed.value}, ${inputGreen.value}, ${inputBlue.value})`;
     document.body.style.backgroundColor = color;
+
+    const categoryHover = document.querySelectorAll('div.triangle');
+    categoryHover.forEach((e)=> {
+        e.setAttribute(`style`, `border-bottom: 120px solid ${color}`);
+    })
+    const productHover = document.querySelectorAll('div.product-hover');
+    productHover.forEach((e)=>{
+        e.style.backgroundColor = color;
+    });
     localStorage.setItem('backgroundColor', color);
 }
 function getSavedColor(){
