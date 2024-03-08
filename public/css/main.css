@@ -69,23 +69,45 @@ main section {
         border-radius: 15px;
         box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.25);
 
+        transition: all .6s ease;
+
         &:hover {
             box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.75);
             z-index: 1;
         }
 
+        &:hover .product-highlight{
+            opacity: 1;
+            overflow-x: clip;
+
+            & img {
+                transform: translateY(-10px) scale(1.8);
+            }
+        }
+
+        .product-highlight {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+
+            transition: all .6s ease;
+        }
+
         &:hover .product-hover{
             transform: rotate(-10deg) scale(105%);
+
+            transition: all 1s ease;
         }
 
         & .product-hover {
             position: absolute;
             width: 100%;
             background: rgba(0, 0, 0, 0.5);
-            filter: invert(1);
+            /*filter: invert(1);*/
             padding-top: 100%;
-            transition: all 1s ease;
             z-index: -1;
+
+            transition: all 1s ease;
         }
 
         & h3 {
@@ -97,14 +119,22 @@ main section {
             border-radius: 5px;
         }
 
+        & picture {
+            overflow: hidden;
+            transition: all .6s ease;
+            border-radius: 10px;
+        }
+
+        &:hover > picture img {
+            opacity: 0;
+        }
+
         & img {
             width: 100%;
             max-width: 350px;
-            border-radius: 10px;
-            transition: all .3s ease;
+            transition: all .6s ease;
 
             &:hover {
-                transform: translateY(-10px);
             }
         }
     }
@@ -133,6 +163,8 @@ main section {
 
             & figure {
                 background-image: linear-gradient(45deg, #0ba360, #abbdb7);
+                border-radius: 10px;
+                overflow: hidden;
 
                 &:nth-child(1) {
                     grid-column: 1/3;
@@ -146,12 +178,14 @@ main section {
             }
 
             & img {
+                border-radius: 10px;
                 background-image: linear-gradient(45deg, #0ba360, #abbdb7);
                 filter: grayscale(100%);
                 transition: all .5s ease-in-out;
 
                 &:hover {
                     filter: none;
+                    transform: scale(1.5);
                 }
             }
         }
@@ -255,7 +289,8 @@ main section {
         grid-template-columns: repeat(2, minmax(0, 1fr));
 
         & div:last-child{
-            display: block !important;
+            display: grid !important;
+            position: relative;
         }
         & img {
             width: 100%;

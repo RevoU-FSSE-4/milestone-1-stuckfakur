@@ -54,6 +54,8 @@
         color: #aaaaaa;
     }
 }
-
-
-
+#slider-1:checked ~ .control-slide-1,
+#slider-2:checked ~ .control-slide-2,
+#slider-3:checked ~ .control-slide-3 {
+    display: block;
+}

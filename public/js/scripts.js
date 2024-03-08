@@ -22,6 +22,7 @@ let inputBlue = document.getElementById('inputBlue');
 
 function setBackgroundColor(){
     let color = `rgb(${inputRed.value}, ${inputGreen.value}, ${inputBlue.value})`;
+    let colorRgba = `rgba(${inputRed.value}, ${inputGreen.value}, ${inputBlue.value}, 0.5)`;
     document.body.style.backgroundColor = color;
 
     const categoryHover = document.querySelectorAll('div.triangle');
@@ -30,7 +31,7 @@ function setBackgroundColor(){
     })
     const productHover = document.querySelectorAll('div.product-hover');
     productHover.forEach((e)=>{
-        e.style.backgroundColor = color;
+        e.style.backgroundColor = colorRgba;
     });
     localStorage.setItem('backgroundColor', color);
 }
@@ -42,7 +43,19 @@ function getSavedColor(){
         inputGreen.value = green;
         inputBlue.value = blue;
 
-        document.body.style.backgroundColor = `rgb(${inputRed.value}, ${inputGreen.value}, ${inputBlue.value})`;
+        const getColor = `rgb(${inputRed.value}, ${inputGreen.value}, ${inputBlue.value})`
+        const getColorRbga = `rgba(${inputRed.value}, ${inputGreen.value}, ${inputBlue.value}, 0.5)`
+
+        document.body.style.backgroundColor = getColor;
+
+        const categoryHover = document.querySelectorAll('div.triangle');
+        categoryHover.forEach((e)=> {
+            e.setAttribute(`style`, `border-bottom: 120px solid ${getColor}`);
+        })
+        const productHover = document.querySelectorAll('div.product-hover');
+        productHover.forEach((e)=>{
+            e.style.backgroundColor = getColorRbga;
+        });
     }
 }
 
